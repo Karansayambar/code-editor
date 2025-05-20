@@ -1,0 +1,36 @@
+.home-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+
+  .left-container {
+    background-color: #1e1e1e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .items-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      button {
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 20px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    img {
+      height: 130px;
+      width: 150px;
+    }
+  }
+}

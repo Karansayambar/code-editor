@@ -1,0 +1,80 @@
+.root-editor-container {
+  background-color: blue;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+
+  .editor-header {
+    background-color: #1a1a1a;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+
+    button,
+    select {
+      border: none;
+      background-color: #131313;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    button {
+      color: #00bba2;
+      background-color: #2a3d3a;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #23635a;
+      transition-duration: 0.5s;
+    }
+
+    select:focus {
+      outline: none;
+      border: none;
+    }
+    .title {
+      font-size: 25px;
+    }
+  }
+
+  .editor-footer {
+    background-color: #1a1a1a;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    .btn {
+      display: flex;
+      align-items: center;
+      padding: 4px 10px;
+      background-color: #3e3e3e;
+      color: #c3c4c8;
+      border-radius: 5px;
+      border: none;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      transition-duration: 0.5s;
+    }
+
+    .btn:hover {
+      background-color: #2a2929;
+      color: white;
+    }
+  }
+  .editor-body {
+    background-color: black;
+    flex-grow: 1 !important;
+    padding: 10px;
+    color: white;
+  }
+  .editor-left-container,
+  .editor-right-container {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+  }
+}
